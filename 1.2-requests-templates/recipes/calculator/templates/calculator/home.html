@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор рецептов</title>
+</head>
+<body>
+    <h1>Выберите рецепт:</h1>
+    {% for title, url in dish.items %}
+    <h3><a href="{{ url }}">{{ title }}</a></h3>
+    {% endfor %}
+</body>
+</html>
