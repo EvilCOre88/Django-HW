@@ -16,5 +16,23 @@
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
     }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Сияние",
+      "author": "Стивен Кинг",
+      "pub_date": "2018-09-10"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "1984",
+      "author": "Джордж Оруэл",
+      "pub_date": "2015-03-11"
+    }
   }
 ]
