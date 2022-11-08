@@ -74,18 +74,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_testing.wsgi.application'
 
+MAX_STUDENTS_PER_COURSE = 20
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'netology_django_testing',
-        'HOST': '127.0.0.1',
+        'NAME': 'first_django',
+        'HOST': 'localhost',
         'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': 'Qwerty2022',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

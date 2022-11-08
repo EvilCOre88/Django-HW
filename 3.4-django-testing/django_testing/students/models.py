@@ -17,4 +17,10 @@ class Course(models.Model):
     students = models.ManyToManyField(
         Student,
         blank=True,
+        through='Places',
+        related_name='Cources'
     )
+
+class Places(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='place')
+    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='place')
